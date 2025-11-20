@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hrms-root
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ashviniwe/hrms-gitops.git
+    path: .
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
