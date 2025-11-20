@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/ashviniwe/hrms-gitops.git
-    path: .
+    path: apps
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc

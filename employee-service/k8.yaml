@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: employee-service
+  name: user-service
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/ashviniwe/hrms-gitops.git
-    path: employee-service
+    path: user-service
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
