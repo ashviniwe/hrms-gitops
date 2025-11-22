@@ -1,0 +1,9 @@
+dependencies:
+- name: user-service
+  repository: file://../charts/user-service
+  version: 0.1.0
+- name: employee-service
+  repository: file://../charts/employee-service
+  version: 0.1.0
+digest: sha256:2a907cf095f7b4566e5bd22a58aaa8ff2852db762e92c14d9740ad441aacb838
+generated: "2025-11-22T22:34:04.8590531+05:30"

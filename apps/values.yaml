@@ -1,0 +1,5 @@
+user-service:
+  replicaCount: 1
+
+employee-service:
+  replicaCount: 1

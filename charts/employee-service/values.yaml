@@ -1,0 +1,9 @@
+image:
+  repository: ashvini/employee-service
+  tag: v1
+
+service:
+  type: ClusterIP
+  port: 4000
+
+replicaCount: 1

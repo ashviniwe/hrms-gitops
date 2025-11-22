@@ -6,12 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ashviniwe/hrms-gitops.git
+    repoURL: https://github.com/ashviniwe/hrms-gitops
+    targetRevision: HEAD
     path: apps
-    targetRevision: main
+    helm:
+      releaseName: hrms
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: hrms
   syncPolicy:
     automated:
       prune: true

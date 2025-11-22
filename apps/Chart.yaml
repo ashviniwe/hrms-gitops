@@ -1,0 +1,12 @@
+apiVersion: v2
+name: hrms
+version: 0.1.0
+description: Umbrella chart for HRMS microservices
+
+dependencies:
+  - name: user-service
+    version: 0.1.0
+    repository: "file://../charts/user-service"
+  - name: employee-service
+    version: 0.1.0
+    repository: "file://../charts/employee-service"
