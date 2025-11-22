@@ -1,6 +1,6 @@
 image:
   repository: ashviniw/user-service
-  tag: v1
+  tag: latest
 
 service:
   type: ClusterIP

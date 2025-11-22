@@ -1,6 +1,6 @@
 image:
-  repository: ashvini/employee-service
-  tag: v1
+  repository: ashviniw/employee-service
+  tag: latest
 
 service:
   type: ClusterIP
